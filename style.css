@@ -1,0 +1,28 @@
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+}
+
+.box {
+    background-color: rgb(202, 134, 134); 
+}
+
+.header{
+    background-color: rgb(202, 134, 134); 
+}
+
+.title {
+    background-color: rgb(202, 134, 134); 
+}
+
+#photo{
+    width:240px;
+    height:240px;
+}
