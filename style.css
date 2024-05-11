@@ -1,28 +1,183 @@
+*{
+    font-family: "Montserrat",sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
-nav ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: center;
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.33fr 1fr;
+    width: 210mm;
+    height: 297mm;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.container .card1 {
+    padding: 40px 20px;
+    padding-left: 30px;
+    background-color: rgb(246, 244, 242);
+    width: 100%;
+    color: rgb(147, 83, 60);
+}
+
+.container .card1 .profile {
+    display: inline-flex;
+    margin-bottom: 5px;
+    margin-left: -15px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 4px solid rgb(147, 83, 60);
+    background-image: url("gyu.png");
+    background-position: center top;
+    background-size: cover;
+}
+
+.container .card1 .contactbox {
+    margin-top: 10px;
+}
+
+.container .card1 .contactbox>* {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    margin-top: 25px;
     align-items: center;
-    padding: 0.5rem;
-    background-color: black;
-    color: white;
 }
 
-.box {
-    background-color: rgb(202, 134, 134); 
+.container .card1 .personalbox {
+    margin-top: 35px;
 }
 
-.header{
-    background-color: rgb(202, 134, 134); 
+.container .card1 .personalbox .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color:rgb(93, 61, 49) ;
+    border-radius: 50%;
+    margin-left: 4px;
 }
 
-.title {
-    background-color: rgb(202, 134, 134); 
+.container .card1 .personalbox .dot.active {
+    background-color: rgb(228, 163, 139);
 }
 
-#photo{
-    width:240px;
-    height:240px;
+.container .card1 .hobbiesbox {
+    margin-top: 35px;
+}
+
+.container .card1 .hobbiesbox .hobbies {
+    margin: 10px 0px;
+}
+
+.container .card2 {
+    background-color:rgb(90, 53, 40);
+    padding: 40px 20px;
+    padding-right: 75px;
+    color: rgb(246, 244, 242);
+}
+
+.container .card2 .headtitle {
+    font-size: 2.3em;
+    color: rgb(246, 244, 242);
+    font-weight: 400;
+}
+
+.container .card2 .box {
+    display: inline-block;
+    padding: 2px 70px 2px 20px;
+    margin-left: -20px;
+    margin-top: 35px;
+    background-color: rgb(246, 244, 242);
+    color: rgb(147, 83, 60);
+}
+
+.container .card2 .group1 .desc {
+    margin-top: 15px;
+    line-height: 1.5;
+
+}
+
+.container .card2 .group2 .desc {
+    margin-top: 15px;
+    margin-left: 20px;
+
+}
+
+.container .card2 .group2 .desc ul {
+    margin-top: 20px;
+    margin-left: 5px;
+    position: relative;
+}
+
+.container .card2 .group2 .desc ul::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -22px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(240, 199, 184);
+}
+
+.container .card2 .group2 .desc ul li {
+    list-style-type: none;
+    position: relative;
+}
+
+
+
+.container .card2 .group2 .desc ul:last-of-type li::before {
+    content: none;
+}
+
+.container .card2 .group2 .desc ul li div:last-of-type{
+    color: rgb(240, 199, 184);
+    font-weight: bold;
+}
+
+.container .card2 .group3 .desc {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.container .card2 .group3 .desc ul{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.container .card2 .group3 .desc ul::before{
+    position:absolute;
+    content: "";
+    top: 30px;
+    left: -22px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(240, 199, 184);
+}
+
+.container .card2 .group3 .desc ul li{
+    list-style-type: none;
+    position: relative;
+}
+
+
+
+.container .card2 .group3 ul li div:nth-child(2){
+    color: rgb(240, 199, 184);
+    font-weight: bold;
+}
+
+.container .card2 .group3 .desc ul:last-of-type li::before {
+    content:none;
 }
